@@ -1,10 +1,7 @@
-/* Custom CSS for ConIngenio Website */
-
-/* General Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
-    padding-top: 56px; /* To account for the fixed navbar */
+    padding-top: 56px; 
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -45,7 +42,6 @@ a:hover {
     color: #2980b9;
 }
 
-/* Header & Navbar */
 .navbar-brand {
     font-weight: 600;
     display: flex;
@@ -65,14 +61,12 @@ a:hover {
     color: white;
 }
 
-/* Hero Section */
 .hero-section {
     padding-top: 5rem;
     padding-bottom: 5rem;
     background-color: #f8f9fa;
 }
 
-/* Services Section */
 .service-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: none;
@@ -97,7 +91,6 @@ a:hover {
     background-color: rgba(52, 152, 219, 0.1);
 }
 
-/* Testimonials Section */
 .testimonial-card {
     border: none;
     border-radius: 10px;
@@ -115,14 +108,12 @@ a:hover {
     object-fit: cover;
 }
 
-/* Contact Form */
 .form-control:focus {
     border-color: #3498db;
     box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
     transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
 
-/* Team Section */
 .team-card {
     border: none;
     border-radius: 10px;
@@ -155,7 +146,6 @@ a:hover {
     background-color: #e9ecef;
 }
 
-/* Timeline Section */
 .timeline {
     position: relative;
     max-width: 1200px;
@@ -216,7 +206,6 @@ a:hover {
     margin-bottom: 0.5rem;
 }
 
-/* Value Cards */
 .value-card {
     border: none;
     border-radius: 10px;
@@ -228,7 +217,6 @@ a:hover {
     transform: translateY(-5px);
 }
 
-/* Process Section */
 .process-number {
     width: 50px;
     height: 50px;
@@ -239,7 +227,6 @@ a:hover {
     font-weight: bold;
 }
 
-/* Client Logos */
 .client-logo {
     max-height: 80px;
     opacity: 0.7;
@@ -251,7 +238,6 @@ a:hover {
     transform: scale(1.05);
 }
 
-/* FAQ Section */
 .accordion-button:not(.collapsed) {
     background-color: rgba(52, 152, 219, 0.1);
     color: #3498db;
@@ -261,18 +247,15 @@ a:hover {
     box-shadow: 0 0 0 0.25rem rgba(52, 152, 219, 0.25);
 }
 
-/* Footer */
 footer a:hover {
     color: #3498db !important;
 }
 
-/* Map Container */
 .map-container {
     height: 400px;
     overflow: hidden;
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
     .timeline::after {
         left: 31px;
@@ -298,7 +281,6 @@ footer a:hover {
     }
 }
 
-/* Animation Classes */
 .fade-in {
     animation: fadeIn 1s ease-in-out;
 }
@@ -314,7 +296,6 @@ footer a:hover {
     }
 }
 
-/* Service Detail Page */
 .service-detail {
     padding: 3rem 0;
 }
@@ -325,7 +306,6 @@ footer a:hover {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* About Us Page */
 .mission-vision-section {
     background-color: #f8f9fa;
     padding: 3rem 0;
@@ -347,7 +327,6 @@ footer a:hover {
     border-left: 5px solid #2ecc71;
 }
 
-/* Dark Mode Styles */
 .dark-mode {
     background-color: #1a1a1a;
     color: #f0f0f0;
@@ -414,7 +393,6 @@ footer a:hover {
     color: #f0f0f0;
 }
 
-/* Ajustes para cards en modo oscuro */
 .dark-mode .service-card,
 .dark-mode .testimonial-card,
 .dark-mode .team-card,
@@ -427,12 +405,10 @@ footer a:hover {
     background-color: rgba(102, 176, 255, 0.1);
 }
 
-/* Ajustes para el footer en modo oscuro */
 .dark-mode .bg-dark {
     background-color: #000 !important;
 }
 
-/* Ajustes para secciones con fondo claro */
 .dark-mode .bg-light,
 .dark-mode .contact-header,
 .dark-mode .map-section .bg-light,
@@ -441,7 +417,6 @@ footer a:hover {
     color: #f0f0f0;
 }
 
-/* Ajustes para acordeón */
 .dark-mode .accordion-item {
     background-color: #2c2c2c;
     border-color: #404040;
@@ -462,7 +437,6 @@ footer a:hover {
     color: #f0f0f0;
 }
 
-/* Ajustes para formularios */
 .dark-mode .form-label,
 .dark-mode .form-check-label {
     color: #f0f0f0;
@@ -486,7 +460,6 @@ footer a:hover {
     border-color: #404040;
 }
 
-/* Ajustes para botones outline */
 .dark-mode .btn-outline-primary {
     color: #66b0ff;
     border-color: #66b0ff;
@@ -497,7 +470,6 @@ footer a:hover {
     color: #1a1a1a;
 }
 
-/* Ajustes para secciones de información */
 .dark-mode .contact-info,
 .dark-mode .social-links {
     color: #f0f0f0;
@@ -508,12 +480,10 @@ footer a:hover {
     color: #f0f0f0;
 }
 
-/* Ajustes para iconos */
 .dark-mode .text-primary {
     color: #66b0ff !important;
 }
 
-/* Ajustes para la sección hero en modo oscuro */
 .dark-mode .hero-section {
     background-color: #1a1a1a;
     color: #f0f0f0;
@@ -534,13 +504,12 @@ footer a:hover {
     color: #1a1a1a;
 }
 
-/* Asegurarse de que las transiciones sean suaves */
 .hero-section,
 .hero-section * {
     transition: all 0.3s ease-in-out;
 }
 
-/* Transiciones suaves */
+
 body,
 .accordion-item,
 .form-control,
@@ -552,7 +521,7 @@ body,
     transition: all 0.3s ease-in-out;
 }
 
-/* Ajuste para secciones claras en modo normal */
+
 .bg-light {
     background-color: #e9ecef !important;
 }
@@ -565,7 +534,7 @@ body,
     background-color: #e9ecef !important;
 }
 
-/* Ajuste para que el logo se vea mejor en fondo claro */
+
 .contact-header img,
 .about-header img,
 .services-header img {
