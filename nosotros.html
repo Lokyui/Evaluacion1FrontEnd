@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - ConIngenio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header & Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="ConIngenio Logo" height="40">
+                    ConIngenio
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Nuestros Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contáctenos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-5">
+        <!-- About Header -->
+        <section class="about-header py-5 bg-light">
+            <div class="container text-center">
+                <h1 class="display-4 mb-3">Nosotros</h1>
+                <p class="lead">Conozca a ConIngenio: quiénes somos y qué nos impulsa</p>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <p>ConIngenio es una empresa líder en consultoría y desarrollo de software, comprometida con la innovación tecnológica y la excelencia en el servicio al cliente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Content -->
+        <section class="about-content py-5">
+            <div class="container">
+                <div id="about-container">
+                    <!-- La información de Nosotros se cargará desde la API -->
+                    <div class="text-center">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Cargando...</span>
+                        </div>
+                        <p class="mt-2">Cargando información...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Nuestro Equipo</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 team-card">
+                            <img src="img/team1.jpg" class="card-img-top" alt="Foto del equipo">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Carlos Mendoza</h5>
+                                <p class="card-subtitle mb-2 text-muted">Director Ejecutivo</p>
+                                <p class="card-text">Con más de 15 años de experiencia en el sector tecnológico, lidera la visión estratégica de ConIngenio.</p>
+                                <div class="social-links mt-3">
+                                    <a href="#" class="text-dark me-2"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="text-dark me-2"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="text-dark"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 team-card">
+                            <img src="img/team2.jpg" class="card-img-top" alt="Foto del equipo">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Laura Sánchez</h5>
+                                <p class="card-subtitle mb-2 text-muted">Directora de Tecnología</p>
+                                <p class="card-text">Experta en arquitectura de software y soluciones cloud, responsable de la innovación tecnológica.</p>
+                                <div class="social-links mt-3">
+                                    <a href="#" class="text-dark me-2"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="text-dark me-2"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="text-dark"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 team-card">
+                            <img src="img/team3.jpg" class="card-img-top" alt="Foto del equipo">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Alejandro Torres</h5>
+                                <p class="card-subtitle mb-2 text-muted">Director de Proyectos</p>
+                                <p class="card-text">Certificado en metodologías ágiles, supervisa la ejecución de todos los proyectos de desarrollo.</p>
+                                <div class="social-links mt-3">
+                                    <a href="#" class="text-dark me-2"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="text-dark me-2"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="text-dark"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 team-card">
+                            <img src="img/team4.jpg" class="card-img-top" alt="Foto del equipo">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">María Rodríguez</h5>
+                                <p class="card-subtitle mb-2 text-muted">Directora de Consultoría</p>
+                                <p class="card-text">Especialista en transformación digital, enfocada en ayudar a las empresas a alcanzar sus objetivos de negocio.</p>
+                                <div class="social-links mt-3">
+                                    <a href="#" class="text-dark me-2"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="text-dark me-2"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="text-dark"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section class="timeline-section py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Nuestra Historia</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2016</div>
+                            <h5>Fundación de ConIngenio</h5>
+                            <p>Fundada por un grupo de ingenieros visionarios, ConIngenio comenzó como una pequeña consultora de software en Santiago.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2018</div>
+                            <h5>Expansión de servicios</h5>
+                            <p>Ampliamos nuestra oferta para incluir soluciones multiexperiencia y consultoría digital integral.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2020</div>
+                            <h5>Innovación en tiempos de crisis</h5>
+                            <p>Durante la pandemia, desarrollamos soluciones innovadoras para ayudar a las empresas a adaptarse al nuevo entorno digital.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2022</div>
+                            <h5>Reconocimiento internacional</h5>
+                            <p>Recibimos reconocimiento por nuestras soluciones de transformación digital y comenzamos proyectos en el extranjero.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2024</div>
+                            <h5>Presente y futuro</h5>
+                            <p>Hoy, ConIngenio es reconocida como líder en el mercado, continuamente innovando y expandiendo nuestros servicios.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="values-section py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Nuestros Valores</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 value-card">
+                            <div class="card-body text-center">
+                                <div class="icon-wrapper mb-3">
+                                    <i class="fas fa-lightbulb fa-3x text-primary"></i>
+                                </div>
+                                <h5 class="card-title">Innovación</h5>
+                                <p class="card-text">Buscamos constantemente nuevas formas de resolver problemas y mejorar nuestras soluciones.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 value-card">
+                            <div class="card-body text-center">
+                                <div class="icon-wrapper mb-3">
+                                    <i class="fas fa-handshake fa-3x text-primary"></i>
+                                </div>
+                                <h5 class="card-title">Compromiso</h5>
+                                <p class="card-text">Nos comprometemos con el éxito de nuestros clientes y la excelencia en todo lo que hacemos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 value-card">
+                            <div class="card-body text-center">
+                                <div class="icon-wrapper mb-3">
+                                    <i class="fas fa-users fa-3x text-primary"></i>
+                                </div>
+                                <h5 class="card-title">Colaboración</h5>
+                                <p class="card-text">Trabajamos en estrecha colaboración con nuestros clientes para entender sus necesidades y lograr sus objetivos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section py-5 bg-primary text-white">
+            <div class="container text-center">
+                <h2 class="mb-4">¿Listo para trabajar con nosotros?</h2>
+                <p class="lead mb-4">Contáctenos hoy mismo para discutir cómo podemos ayudarle con sus proyectos tecnológicos.</p>
+                <a href="contacto.html" class="btn btn-light btn-lg">Contáctenos</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5>ConIngenio</h5>
+                    <p>Soluciones digitales innovadoras para impulsar su negocio.</p>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5>Contacto</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i>Av. Providencia 1234, Oficina 601<br>Providencia, Santiago, Chile</p>
+                        <p><i class="fas fa-phone me-2"></i>+56 2 1234 5678</p>
+                        <p><i class="fas fa-envelope me-2"></i>info@coningenio.cl</p>
+                    </address>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="servicios.html" class="text-white">Nuestros Servicios</a></li>
+                        <li><a href="contacto.html" class="text-white">Contáctenos</a></li>
+                        <li><a href="nosotros.html" class="text-white">Nosotros</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2025 ConIngenio. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script src="js/nosotros.js"></script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConIngenio - Consultoría y Desarrollo de Software</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header & Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="ConIngenio Logo" height="40">
+                    ConIngenio
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Nuestros Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contáctenos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h1 class="display-4 fw-bold mb-4">Soluciones digitales integrales para su empresa</h1>
+                        <p class="lead mb-4">Somos expertos en consultoría y desarrollo de software, enfocados en crear soluciones tecnológicas innovadoras que impulsan el crecimiento de su negocio.</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <a href="servicios.html" class="btn btn-primary btn-lg px-4 me-md-2">Nuestros Servicios</a>
+                            <a href="contacto.html" class="btn btn-outline-primary btn-lg px-4">Contáctenos</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="img/hero-image.jpg" class="img-fluid rounded shadow" alt="Digital Solutions">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Services Section -->
+        <section class="featured-services py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Nuestros Servicios Destacados</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 service-card">
+                            <div class="card-body text-center">
+                                <div class="icon-wrapper mb-3">
+                                    <i class="fas fa-laptop-code fa-3x text-primary"></i>
+                                </div>
+                                <h5 class="card-title">Consultoría Digital</h5>
+                                <p class="card-text">Asesoramiento estratégico para transformar digitalmente su negocio.</p>
+                                <a href="servicios.html#consultoria" class="btn btn-sm btn-outline-primary mt-3">Más información</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 service-card">
+                            <div class="card-body text-center">
+                                <div class="icon-wrapper mb-3">
+                                    <i class="fas fa-mobile-alt fa-3x text-primary"></i>
+                                </div>
+                                <h5 class="card-title">Soluciones Multiexperiencia</h5>
+                                <p class="card-text">Desarrollo de aplicaciones optimizadas para múltiples plataformas.</p>
+                                <a href="servicios.html#multiexperiencia" class="btn btn-sm btn-outline-primary mt-3">Más información</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 service-card">
+                            <div class="card-body text-center">
+                                <div class="icon-wrapper mb-3">
+                                    <i class="fas fa-network-wired fa-3x text-primary"></i>
+                                </div>
+                                <h5 class="card-title">Evolución de Ecosistemas</h5>
+                                <p class="card-text">Modernización y optimización de sus sistemas existentes.</p>
+                                <a href="servicios.html#ecosistemas" class="btn btn-sm btn-outline-primary mt-3">Más información</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 service-card">
+                            <div class="card-body text-center">
+                                <div class="icon-wrapper mb-3">
+                                    <i class="fas fa-code fa-3x text-primary"></i>
+                                </div>
+                                <h5 class="card-title">Soluciones Low-Code</h5>
+                                <p class="card-text">Desarrollo rápido y eficiente de aplicaciones empresariales.</p>
+                                <a href="servicios.html#lowcode" class="btn btn-sm btn-outline-primary mt-3">Más información</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Lo que dicen nuestros clientes</h2>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100 testimonial-card">
+                            <div class="card-body">
+                                <p class="card-text"><i class="fas fa-quote-left text-primary me-2"></i>La consultoría digital proporcionada por ConIngenio transformó completamente nuestra estrategia de negocio. Altamente recomendados.<i class="fas fa-quote-right text-primary ms-2"></i></p>
+                                <div class="d-flex align-items-center mt-3">
+                                    <img src="img/client1.jpg" alt="Cliente" class="rounded-circle client-image me-3">
+                                    <div>
+                                        <h6 class="mb-0">Carlos Rodríguez</h6>
+                                        <small class="text-muted">Director de Tecnología, Empresa A</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100 testimonial-card">
+                            <div class="card-body">
+                                <p class="card-text"><i class="fas fa-quote-left text-primary me-2"></i>Las soluciones multiexperiencia desarrolladas han mejorado significativamente la interacción con nuestros clientes en todas las plataformas.<i class="fas fa-quote-right text-primary ms-2"></i></p>
+                                <div class="d-flex align-items-center mt-3">
+                                    <img src="img/client2.jpg" alt="Cliente" class="rounded-circle client-image me-3">
+                                    <div>
+                                        <h6 class="mb-0">Laura Martínez</h6>
+                                        <small class="text-muted">Gerente de Proyectos, Empresa B</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100 testimonial-card">
+                            <div class="card-body">
+                                <p class="card-text"><i class="fas fa-quote-left text-primary me-2"></i>El equipo de ConIngenio modernizó nuestros sistemas legados con una eficiencia impresionante, sin interrumpir nuestras operaciones diarias.<i class="fas fa-quote-right text-primary ms-2"></i></p>
+                                <div class="d-flex align-items-center mt-3">
+                                    <img src="img/client3.jpg" alt="Cliente" class="rounded-circle client-image me-3">
+                                    <div>
+                                        <h6 class="mb-0">Alejandro Torres</h6>
+                                        <small class="text-muted">CEO, Empresa C</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section py-5 bg-primary text-white">
+            <div class="container text-center">
+                <h2 class="mb-4">¿Listo para transformar su negocio?</h2>
+                <p class="lead mb-4">Permítanos ayudarle a llevar su empresa al siguiente nivel con nuestras soluciones digitales.</p>
+                <a href="contacto.html" class="btn btn-light btn-lg">Contáctenos Hoy</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5>ConIngenio</h5>
+                    <p>Soluciones digitales innovadoras para impulsar su negocio.</p>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5>Contacto</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i>Av. Providencia 1234, Oficina 601<br>Providencia, Santiago, Chile</p>
+                        <p><i class="fas fa-phone me-2"></i>+56 2 1234 5678</p>
+                        <p><i class="fas fa-envelope me-2"></i>info@coningenio.cl</p>
+                    </address>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="servicios.html" class="text-white">Nuestros Servicios</a></li>
+                        <li><a href="contacto.html" class="text-white">Contáctenos</a></li>
+                        <li><a href="nosotros.html" class="text-white">Nosotros</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2025 ConIngenio. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
