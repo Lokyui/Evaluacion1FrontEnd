@@ -1,75 +1,66 @@
-// main.js - Script principal para el sitio web de ConIngenio
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Agregar clases de animación al hacer scroll
-    const animatedElements = document.querySelectorAll('.service-card, .testimonial-card, .team-card, .value-card, .process-card');
+$(document).ready(function() {
+    const darkMode = localStorage.getItem('darkMode');
     
-    function checkScroll() {
-        const triggerBottom = window.innerHeight * 0.8;
+    if (darkMode === 'enabled') {
+        $('body').addClass('dark-mode');
+        $('.accordion-item, .form-control, .btn-outline-primary').addClass('dark-mode');
+        $('#theme-toggle').html('<i class="fas fa-sun"></i>');
+    } else {
+        $('#theme-toggle').html('<i class="fas fa-moon"></i>');
+    }
+
+    const themeToggle = `
+        <li class="nav-item">
+            <button class="nav-link btn btn-link" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </li>
+    `;
+    $('.navbar-nav').append(themeToggle);
+
+    $('#theme-toggle').click(function() {
+        if ($('body').hasClass('dark-mode')) {
+            $('body').removeClass('dark-mode');
+            $('.accordion-item, .form-control, .btn-outline-primary').removeClass('dark-mode');
+            localStorage.setItem('darkMode', null);
+            $(this).html('<i class="fas fa-moon"></i>');
+        } else {
+            $('body').addClass('dark-mode');
+            $('.accordion-item, .form-control, .btn-outline-primary').addClass('dark-mode');
+            localStorage.setItem('darkMode', 'enabled');
+            $(this).html('<i class="fas fa-sun"></i>');
+        }
+    });
+
+    var elementosAnimados = $('.service-card, .testimonial-card, .team-card, .value-card, .process-card');
+    
+    function verificarScroll() {
+        var alturaTrigger = $(window).height() * 0.8;
         
-        animatedElements.forEach(element => {
-            const elementTop = element.getBoundingClientRect().top;
-            
-            if (elementTop < triggerBottom) {
-                element.classList.add('fade-in');
+        elementosAnimados.each(function() {
+            var posicionElemento = $(this).offset().top;
+            if ($(window).scrollTop() + alturaTrigger > posicionElemento) {
+                $(this).addClass('fade-in');
             }
         });
     }
-    
-    // Verificar elementos al cargar la página
-    checkScroll();
-    
-    // Verificar elementos al hacer scroll
-    window.addEventListener('scroll', checkScroll);
-    
-    // Smooth scrolling para enlaces internos
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            
-            const targetId = this.getAttribute('href');
-            if (targetId === '#') return;
-            
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop - 70, // Ajustar por navbar fixed
-                    behavior: 'smooth'
-                });
-            }
-        });
+
+    verificarScroll();
+
+    $(window).scroll(verificarScroll);
+
+    $('a[href^="#"]').on('click', function(e) {
+        e.preventDefault();
+        
+        var destino = $(this).attr('href');
+        if (destino === '#') return;
+        
+        $('html, body').animate({
+            scrollTop: $(destino).offset().top - 70 
+        }, 800);
     });
     
-    // Cambiar estado activo en navbar según la sección visible
-    function setActiveNavItem() {
-        const sections = document.querySelectorAll('main section');
-        let currentSection = '';
-        
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            
-            if (window.scrollY >= (sectionTop - 100)) {
-                currentSection = section.getAttribute('id');
-            }
-        });
-        
-        document.querySelectorAll('.navbar-nav .nav-link').forEach(navLink => {
-            navLink.classList.remove('active');
-            if (currentSection && navLink.getAttribute('href') === '#' + currentSection) {
-                navLink.classList.add('active');
-            }
-        });
-    }
-    
-    // Detectar la sección actual al hacer scroll
-    window.addEventListener('scroll', setActiveNavItem);
-    
-    // Inicializar tooltips de Bootstrap si existen
-    if (typeof bootstrap !== 'undefined' && bootstrap.Tooltip) {
-        const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-        tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl);
-        });
+    if (typeof $.fn.tooltip !== 'undefined') {
+        $('[data-bs-toggle="tooltip"]').tooltip();
     }
 });

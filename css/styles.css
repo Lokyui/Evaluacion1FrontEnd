@@ -5,6 +5,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
     padding-top: 56px; /* To account for the fixed navbar */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .bg-primary {
@@ -118,6 +119,7 @@ a:hover {
 .form-control:focus {
     border-color: #3498db;
     box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
 
 /* Team Section */
@@ -343,4 +345,229 @@ footer a:hover {
 
 .vision-card {
     border-left: 5px solid #2ecc71;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+.dark-mode .navbar {
+    background-color: #000 !important;
+}
+
+.dark-mode .bg-light {
+    background-color: #2c2c2c !important;
+}
+
+.dark-mode .card {
+    background-color: #2c2c2c;
+    border-color: #404040;
+}
+
+.dark-mode .bg-primary {
+    background-color: #1e4976 !important;
+}
+
+.dark-mode .text-muted {
+    color: #a0a0a0 !important;
+}
+
+.dark-mode .form-control {
+    background-color: #333;
+    border-color: #404040;
+    color: #f0f0f0;
+}
+
+.dark-mode .form-control:focus {
+    background-color: #404040;
+    color: #f0f0f0;
+}
+
+.dark-mode .accordion-button {
+    background-color: #2c2c2c;
+    color: #f0f0f0;
+}
+
+.dark-mode .accordion-button:not(.collapsed) {
+    background-color: #404040;
+    color: #f0f0f0;
+}
+
+.dark-mode .accordion-body {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+.dark-mode .btn-outline-primary {
+    color: #66b0ff;
+    border-color: #66b0ff;
+}
+
+.dark-mode .btn-outline-primary:hover {
+    background-color: #66b0ff;
+    color: #1a1a1a;
+}
+
+.dark-mode #theme-toggle {
+    color: #f0f0f0;
+}
+
+/* Ajustes para cards en modo oscuro */
+.dark-mode .service-card,
+.dark-mode .testimonial-card,
+.dark-mode .team-card,
+.dark-mode .value-card {
+    background-color: #2c2c2c;
+    border: 1px solid #404040;
+}
+
+.dark-mode .icon-wrapper {
+    background-color: rgba(102, 176, 255, 0.1);
+}
+
+/* Ajustes para el footer en modo oscuro */
+.dark-mode .bg-dark {
+    background-color: #000 !important;
+}
+
+/* Ajustes para secciones con fondo claro */
+.dark-mode .bg-light,
+.dark-mode .contact-header,
+.dark-mode .map-section .bg-light,
+.dark-mode .faq-section {
+    background-color: #2c2c2c !important;
+    color: #f0f0f0;
+}
+
+/* Ajustes para acordeón */
+.dark-mode .accordion-item {
+    background-color: #2c2c2c;
+    border-color: #404040;
+}
+
+.dark-mode .accordion-button {
+    background-color: #2c2c2c;
+    color: #f0f0f0;
+}
+
+.dark-mode .accordion-button:not(.collapsed) {
+    background-color: #404040;
+    color: #f0f0f0;
+}
+
+.dark-mode .accordion-body {
+    background-color: #2c2c2c;
+    color: #f0f0f0;
+}
+
+/* Ajustes para formularios */
+.dark-mode .form-label,
+.dark-mode .form-check-label {
+    color: #f0f0f0;
+}
+
+.dark-mode .form-control {
+    background-color: #333;
+    border-color: #404040;
+    color: #f0f0f0;
+}
+
+.dark-mode .form-control:focus {
+    background-color: #404040;
+    border-color: #505050;
+    color: #f0f0f0;
+    box-shadow: 0 0 0 0.25rem rgba(102, 176, 255, 0.25);
+}
+
+.dark-mode .form-check-input {
+    background-color: #333;
+    border-color: #404040;
+}
+
+/* Ajustes para botones outline */
+.dark-mode .btn-outline-primary {
+    color: #66b0ff;
+    border-color: #66b0ff;
+}
+
+.dark-mode .btn-outline-primary:hover {
+    background-color: #66b0ff;
+    color: #1a1a1a;
+}
+
+/* Ajustes para secciones de información */
+.dark-mode .contact-info,
+.dark-mode .social-links {
+    color: #f0f0f0;
+}
+
+.dark-mode .contact-info h5,
+.dark-mode .social-links h5 {
+    color: #f0f0f0;
+}
+
+/* Ajustes para iconos */
+.dark-mode .text-primary {
+    color: #66b0ff !important;
+}
+
+/* Ajustes para la sección hero en modo oscuro */
+.dark-mode .hero-section {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+.dark-mode .hero-section .display-4,
+.dark-mode .hero-section .lead {
+    color: #f0f0f0;
+}
+
+.dark-mode .hero-section .btn-outline-primary {
+    color: #66b0ff;
+    border-color: #66b0ff;
+}
+
+.dark-mode .hero-section .btn-outline-primary:hover {
+    background-color: #66b0ff;
+    color: #1a1a1a;
+}
+
+/* Asegurarse de que las transiciones sean suaves */
+.hero-section,
+.hero-section * {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Transiciones suaves */
+body,
+.accordion-item,
+.form-control,
+.btn,
+.bg-light,
+.contact-header,
+.map-section,
+.faq-section {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Ajuste para secciones claras en modo normal */
+.bg-light {
+    background-color: #e9ecef !important;
+}
+
+.contact-header,
+.about-header,
+.services-header,
+.map-section .bg-light,
+.faq-section {
+    background-color: #e9ecef !important;
+}
+
+/* Ajuste para que el logo se vea mejor en fondo claro */
+.contact-header img,
+.about-header img,
+.services-header img {
+    filter: brightness(0.8);
 }
